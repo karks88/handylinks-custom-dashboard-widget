@@ -15,6 +15,10 @@ Custom Gutenberg blocks for the PSRC multisite network.
 
 Adds a customizable widget to the WordPress dashboard.
 
+== Instructions ==
+
+Download a copy of custom-handylinks-widget.php and place it in your /wp-content/plugins/ folder.
+
 == Changelog ==
 
 = 1.0.0 =
