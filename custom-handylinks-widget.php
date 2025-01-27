@@ -3,6 +3,7 @@
 Plugin Name: Handy Links Custom Dashboard Widget
 Plugin URI: https://www.karks.com/
 Description: Adds a customizable widget to the WordPress dashboard.
+Text Domain: handylinks-custom-dashboard-widget
 Version: 1.0
 Author: Eric Karkovack
 Author URI: https://www.karks.com/
@@ -43,10 +44,10 @@ function custom_dashboard_widget_content() {
 				
 			</style>';
 		
-        echo $widget_text;
+        echo wp_kses_post($widget_text);
     }
     else {
-        echo '<p>No content.</p>';
+        echo wp_kses_post('<p>No content.</p>');
     }
 }
 
@@ -76,16 +77,16 @@ function custom_dashboard_widget_settings_page_content() {
             <?php do_settings_sections( 'custom_dashboard_widget_settings' ); ?>
             <table class="form-table">
                 <tr valign="top">
-                    <th scope="row"><?php _e( 'Widget Title' ); ?></th>
+                    <th scope="row"><?php echo esc_html(_e( 'Widget Title', 'handylinks-custom-dashboard-widget' )); ?></th>
                     <td><input type="text" name="custom_dashboard_widget_title" value="<?php echo esc_attr( $widget_title ); ?>" /></td>
                 </tr>
                 <tr valign="top">
-                    <th scope="row"><?php _e( 'Widget Text' ); ?></th>
+                    <th scope="row"><?php echo esc_html(_e( 'Widget Text', 'handylinks-custom-dashboard-widget' )); ?></th>
                     <td>
                         <?php
                         $editor_settings = array(
                             'media_buttons' => true,
-                            'textarea_rows' => 5,
+                            'textarea_rows' => 15,
                             'teeny'         => false,
 							'wpautop'		=> false,
                         );
