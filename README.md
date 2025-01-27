@@ -21,6 +21,9 @@ Download a copy of custom-handylinks-widget.php and place it in your /wp-content
 
 == Changelog ==
 
+= 1.0.2 =
+* Tweak to settings menu title.
+
 = 1.0.1 =
 * Various fixes to comply with WordPress Plugin Check.
 

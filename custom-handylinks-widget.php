@@ -55,7 +55,7 @@ function custom_dashboard_widget_content() {
 function custom_dashboard_widget_settings_page() {
     add_options_page(
         'Handy Links Custom Dashboard Widget Settings', // Page title
-        'Handy Links Custom Widget', // Menu title
+        'Handy Links Custom Dashboard Widget', // Menu title
         'delete_pages', // Capability required to access page (Administrators and Editors only by default).
 						//See https://wordpress.org/documentation/article/roles-and-capabilities/#roles
         'custom_dashboard_widget_settings', // Page slug
