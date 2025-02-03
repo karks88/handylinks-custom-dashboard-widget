@@ -4,7 +4,7 @@ Plugin Name: Handy Links Custom Dashboard Widget
 Plugin URI: https://www.karks.com/
 Description: Adds a customizable widget to the WordPress dashboard.
 Text Domain: handylinks-custom-dashboard-widget
-Version: 1.0
+Version: 1.0.3
 Author: Eric Karkovack
 Author URI: https://www.karks.com/
 License: GPL2

@@ -5,11 +5,9 @@ Tags: dashboard, widgets
 Requires at least: 6.0
 Tested up to: 6.7.1
 Stable tag: 1.0
-Requires PHP: 7.2
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
-Custom Gutenberg blocks for the PSRC multisite network.
 
 == Description ==
 
@@ -20,6 +18,10 @@ Adds a customizable widget to the WordPress dashboard.
 Download a copy of custom-handylinks-widget.php and place it in your /wp-content/plugins/ folder.
 
 == Changelog ==
+
+= 1.0.3 =
+* Add correct version number to plugin file.
+* Changed required PHP version to 7.4.
 
 = 1.0.2 =
 * Tweak to settings menu title.
