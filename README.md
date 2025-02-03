@@ -15,7 +15,7 @@ Adds a customizable widget to the WordPress dashboard.
 
 == Instructions ==
 
-Download a copy of custom-handylinks-widget.php and place it in your /wp-content/plugins/ folder.
+Download a copy of the plugin's ZIP archive and install via the WordPress admin (Plugins > Add New).
 
 == Changelog ==
 
