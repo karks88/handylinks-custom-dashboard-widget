@@ -1,0 +1,24 @@
+name: Build Plugin Zip
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Create ZIP without version number
+        run: |
+          mkdir -p build
+          rsync -av --exclude=".git*" --exclude=".github" --exclude="*.zip" . handylinks-custom-dashboard-widget/
+          zip -r build/handylinks-custom-dashboard-widget.zip handylinks-custom-dashboard-widget
+
+      - name: Upload ZIP as release asset
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/handylinks-custom-dashboard-widget.zip
