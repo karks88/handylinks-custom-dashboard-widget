@@ -17,6 +17,8 @@ Adds a customizable widget to the WordPress dashboard.
 
 Download a copy of the plugin's ZIP archive and install via the WordPress admin (Plugins > Add New).
 
+Activate the plugin and navigate to Settings > Handy Links Custom Dashboard Widget to customize the widget.
+
 == Changelog ==
 
 = 1.0.3 =
